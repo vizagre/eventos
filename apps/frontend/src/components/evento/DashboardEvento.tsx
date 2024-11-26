@@ -9,7 +9,6 @@ export interface DashboardEventoProps {
   presentes: Convidado[];
   ausentes: Convidado[];
   totalGeral: number;
-  atualizarListaConvidados: () => void;
 }
 
 export default function DashboardEvento(props: DashboardEventoProps) {
@@ -37,10 +36,7 @@ export default function DashboardEvento(props: DashboardEventoProps) {
         />
       </div>
 
-      <button
-        className="botao azul self-end mt-12"
-        onClick={props.atualizarListaConvidados}
-      >
+      <button className="botao azul self-end mt-12">
         <span>Atualizar Lista de Convidados</span>
       </button>
 

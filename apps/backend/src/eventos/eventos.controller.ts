@@ -30,7 +30,6 @@ export class EventosController {
 
     const eventoCompleto = complementarEvento(this.deserializar(evento));
     await this.repo.salvar(eventoCompleto);
-    return this.serializar(eventoCompleto);
   }
 
   @Post(':alias/convidado')
