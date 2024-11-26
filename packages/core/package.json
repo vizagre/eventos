@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "core": "file:",
     "uuid": "^11.0.3"
   },
   "devDependencies": {
